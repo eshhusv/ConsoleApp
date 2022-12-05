@@ -20,12 +20,12 @@ namespace ConsoleApp
         public double Diameter
         {
             get { return diameter; }
-            set { diameter = value; }
+            set { if(value > 0)diameter = value; }
         }
         public double Height
         {
             get { return height; }
-            set { height = value; }
+            set { if(value > 0) height = value; }
         }
         public double getVolume()
         {
